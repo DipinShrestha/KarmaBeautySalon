@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Karma Beauty Salon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="service.css">
+    
+    
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">KARMA </a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="team.html" class="nav-link">Specialists</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- NEW: Mobile Navigation Overlay and Menu -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+    <div class="mobile-nav-menu" id="mobile-nav-menu">
+        <div class="mobile-nav-header">
+            <button class="mobile-close-btn" id="mobile-close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="team.html" class="nav-link">Specialists</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
+        </ul>
+        
+    </div>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="services-hero-content">
+            <h1 class="stylists-title">Services</h1>
+        </div>
+    </section>
+
+    <!-- Services Categories - UPDATED -->
+    <section class="services-categories">
+        <div class="container">
+            <div class="categories-container">
+                <button class="category-btn active" data-category="all">All Services</button>
+                <button class="category-btn" data-category="hair">Hair Services</button>
+                <button class="category-btn" data-category="skin">Skin Care</button>
+                <button class="category-btn" data-category="spa">Spa & Massage</button>
+                <button class="category-btn" data-category="nails">Nail Care</button>
+                <button class="category-btn" data-category="makeup">Makeup</button>
+                <button class="category-btn" data-category="bridal">Bridal Packages</button>
+                <button class="category-btn" data-category="waxing">Waxing</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section" id="services">
+        <div class="container">
+           
+            <div class="services-grid" id="services-grid">
+                <!-- Hair Services -->
+                <div class="service-card" data-category="hair">
+                    <div class="service-image">
+                        <img src="IMG_9419.jpg" alt="Haircut & Styling">
+                    </div>
+                    <div class="service-info">
+                        <h3>Haircut & Styling</h3>
+                        <p>Professional haircut and styling tailored to your face shape and lifestyle.</p>
+                        <div class="service-price">From Rs 300</div>
+                        <div class="service-duration">10-20 mins</div>
+                        <ul class="service-features">
+                            <li>Consultation with senior stylist</li>
+                            <li>Custom cut for your hair type</li>
+                            <li>Blow-dry and style</li>
+                            <li>Product recommendations</li>
+                        </ul>
+                        <div class="service-actions">
+                            <button class="book-btn">Book Now</button>
+                            <a href="#" class="learn-more" data-service="haircut">Learn More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="hair">
+                    <div class="service-image">
+                        <img src="IMG_9420.jpg" alt="Hair Coloring">
+                    </div>
+                    <div class="service-info">
+                        <h3>Hair Coloring</h3>
+                        <p>From subtle highlights to bold color transformations with premium products.</p>
+                        <div class="service-price">From Rs 2085</div>
+                        <div class="service-duration">1-2 hours</div>
+                        <ul class="service-features">
+                            <li>Color consultation</li>
+                            <li>Premium color products</li>
+                            <li>Root touch-up or full color</li>
+                            <li>Deep conditioning treatment</li>
+                        </ul>
+                        <div class="service-actions">
+                            <button class="book-btn">Book Now</button>
+                            <a href="#" class="learn-more" data-service="coloring">Learn More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skin Care Services -->
+                <div class="service-card" data-category="skin">
+                    <div class="service-image">
+                        <img src="IMG_9422.jpg" alt="Facial Treatments">
+                    </div>
+                    <div class="service-info">
+                        <h3>Signature Facial</h3>
+                        <p>Rejuvenate your skin with our customized facials using premium, natural products.</p>
+                        <div class="service-price">From 750</div>
+                        <div class="service-duration">60 mins</div>
+                        <ul class="service-features">
+                            <li>Skin analysis and consultation</li>
+                            <li>Deep cleansing and exfoliation</li>
+                            <li>Customized mask treatment</li>
+                            <li>Facial massage and hydration</li>
+                        </ul>
+                        <div class="service-actions">
+                            <button class="book-btn">Book Now</button>
+                            <a href="#" class="learn-more" data-service="facial">Learn More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spa Services -->
+                <div class="service-card" data-category="spa">
+                    <div class="service-image">
+                        <img src="IMG_9424.jpg" alt="Spa Services">
+                    </div>
+                    <div class="service-info">
+                        <h3>Nail Desing</h3>
+                        <p>Relax and unwind with our therapeutic full-body massage to relieve tension.</p>
+                        <div class="service-price">From 900</div>
+                        <div class="service-duration">60-90 mins</div>
+                        <ul class="service-features">
+                            <li>Full-body massage</li>
+                            <li>Aromatherapy oils</li>
+                            <li>Stress and tension relief</li>
+                            <li>Improved circulation</li>
+                        </ul>
+                        <div class="service-actions">
+                            <button class="book-btn">Book Now</button>
+                            <a href="#" class="learn-more" data-service="massage">Learn More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nail Services -->
+                <div class="service-card" data-category="nails">
+                    <div class="service-image">
+                        <img src="IMG_9425.jpg" alt="Manicure & Pedicure">
+                    </div>
+                    <div class="service-info">
+                        <h3>Luxury Manicure & Pedicure</h3>
+                        <p>Pamper your hands and feet with our premium nail care services.</p>
+                        <div class="service-price">From $65</div>
+                        <div class="service-duration">75 mins</div>
+                        <ul class="service-features">
+                            <li>Soaking and exfoliation</li>
+                            <li>Cuticle care and shaping</li>
+                            <li>Massage with luxury creams</li>
+                            <li>Polish of your choice</li>
+                        </ul>
+                        <div class="service-actions">
+                            <button class="book-btn">Book Now</button>
+                            <a href="#" class="learn-more" data-service="manicure">Learn More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Makeup Services -->
+                <div class="service-card" data-category="makeup">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Makeup Application">
+                    </div>
+                    <div class="service-info">
+                        <h3>Professional Makeup</h3>
+                        <p>Flawless makeup application for any occasion by our expert artists.</p>
+                        <div class="service-price">From $60</div>
+                        <div class="service-duration">45-90 mins</div>
+                        <ul class="service-features">
+                            <li>Skin preparation and priming</li>
+                            <li>Customized look creation</li>
+                            <li>High-quality products</li>
+                            <li>Long-lasting finish</li>
+                        </ul>
+                        <div class="service-actions">
+                            <button class="book-btn">Book Now</button>
+                            <a href="#" class="learn-more" data-service="makeup">Learn More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Modal -->
+    <div class="service-modal" id="service-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="section-title">Ready to Transform Your Look?</h2>
+             <div class="cta-buttons">
+                 <a href="#" class="btn cta-btn"><i class="fas fa-calendar-alt"></i> Book Online</a>
+                  </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>KARMA</h3>
+                    <p>Beauty Salon</p>
+                    <p>Where style meets serenity in the heart of the city</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><a href="https://maps.app.goo.gl/WV72YyYncDNsbAPC8"> <i class="fas fa-map-marker-alt"></i> Damak</a></p>
+                    <p><i class="fas fa-phone"></i> (+977) 9800000000</p>
+                    <p><i class="fas fa-envelope"></i> info@karmabeauty.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Sunday:9am - 8pm</p>
+                    <p>Monday: 9am - 8pm</p>
+                    <p>Tuesday: 10am - 8pm</p>
+                    <p>Wednesday:9am - 8pm</p>
+                    <p>Thursday:9am - 8pm</p>
+                    <p>Friday:9am - 8pm</p>
+                    <p>Saturday:9am - 8pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                         <a href="https://www.facebook.com/karmabeautysalon123"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/karmabeautysalon2080?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@karmabeautysalon3?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>
+                          </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Karma Beauty Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+        const mobileNavMenu = document.getElementById('mobile-nav-menu');
+        const mobileCloseBtn = document.getElementById('mobile-close-btn');
+
+        // Toggle mobile navigation
+        hamburger.addEventListener('click', () => {
+            mobileNavOverlay.classList.add('active');
+            mobileNavMenu.classList.add('active');
+            hamburger.innerHTML = '<i class="fas fa-times"></i>';
+        });
+
+        // Close mobile navigation
+        function closeMobileNav() {
+            mobileNavOverlay.classList.remove('active');
+            mobileNavMenu.classList.remove('active');
+            hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+
+        // Close when clicking the X button
+        mobileCloseBtn.addEventListener('click', closeMobileNav);
+
+        // Close when clicking outside the menu
+        mobileNavOverlay.addEventListener('click', closeMobileNav);
+
+        // Close when clicking on a link
+        document.querySelectorAll('.mobile-nav-menu .nav-link').forEach(link => {
+            link.addEventListener('click', closeMobileNav);
+        });
+
+        // Service Category Filtering
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const serviceCards = document.querySelectorAll('.service-card');
+
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const category = button.getAttribute('data-category');
+                
+                // Filter services
+                serviceCards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Service Modal
+        const serviceModal = document.getElementById('service-modal');
+        const modalClose = document.getElementById('modal-close');
+        const modalBody = document.getElementById('modal-body');
+        const learnMoreButtons = document.querySelectorAll('.learn-more');
+
+        // Service details data
+        const serviceDetails = {
+            haircut: {
+                title: "Haircut & Styling",
+                image: "IMG_9419.jpg",
+                price: "From Rs45",
+                duration: "60-90 mins",
+                description: "Our professional haircut and styling service is tailored to your unique face shape, hair type, and lifestyle. We begin with a thorough consultation to understand your needs and preferences, followed by a precision cut that enhances your natural features.",
+                features: [
+                    "Personalized consultation with senior stylist",
+                    "Custom cut for your hair type and face shape",
+                    "Professional blow-dry and styling",
+                    "Product recommendations for at-home care",
+                    "Tips for maintaining your new style"
+                ],
+                benefits: [
+                    "Enhanced facial features",
+                    "Easy-to-maintain style",
+                    "Healthier-looking hair",
+                    "Professional styling tips"
+                ]
+            },
+            coloring: {
+                title: "Hair Coloring",
+                image: "IMG_9420.jpg",
+                price: "From Rs 85",
+                duration: "2-4 hours",
+                description: "Transform your look with our professional hair coloring services. Whether you're looking for subtle highlights, a complete color change, or just a root touch-up, our color specialists use premium products to achieve beautiful, natural-looking results.",
+                features: [
+                    "Comprehensive color consultation",
+                    "Premium ammonia-free color products",
+                    "Root touch-up or full color service",
+                    "Deep conditioning treatment included",
+                    "Toner for perfect shade matching"
+                ],
+                benefits: [
+                    "Vibrant, long-lasting color",
+                    "Improved hair health and shine",
+                    "Customized to your skin tone",
+                    "Professional application techniques"
+                ]
+            },
+            facial: {
+                title: "Signature Facial",
+                image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                price: "From $75",
+                duration: "60 mins",
+                description: "Rejuvenate your skin with our customized facial treatment using premium, natural products. Our estheticians analyze your skin type and concerns to create a personalized treatment that addresses your specific needs.",
+                features: [
+                    "Comprehensive skin analysis",
+                    "Deep cleansing and gentle exfoliation",
+                    "Customized mask treatment",
+                    "Relaxing facial massage",
+                    "Hydration and protection"
+                ],
+                benefits: [
+                    "Improved skin texture and tone",
+                    "Reduced appearance of fine lines",
+                    "Deep hydration and nourishment",
+                    "Relaxation and stress relief"
+                ]
+            },
+            massage: {
+                title: "Swedish Massage",
+                image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                price: "From $90",
+                duration: "60-90 mins",
+                description: "Experience deep relaxation with our therapeutic Swedish massage. This full-body treatment uses long, flowing strokes to relieve muscle tension, improve circulation, and promote overall wellbeing.",
+                features: [
+                    "Full-body massage treatment",
+                    "Aromatherapy with essential oils",
+                    "Customized pressure preference",
+                    "Relaxing ambiance with soft music",
+                    "Hot towel treatment"
+                ],
+                benefits: [
+                    "Reduced muscle tension and pain",
+                    "Improved blood circulation",
+                    "Stress and anxiety relief",
+                    "Enhanced flexibility and mobility"
+                ]
+            },
+            manicure: {
+                title: "Luxury Manicure & Pedicure",
+                image: "https://images.unsplash.com/photo-1607778833979-49f3b6a59f37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+                price: "From $65",
+                duration: "75 mins",
+                description: "Pamper your hands and feet with our luxury manicure and pedicure service. We use premium products and techniques to leave your nails looking beautiful and your skin feeling soft and refreshed.",
+                features: [
+                    "Soaking in aromatic baths",
+                    "Exfoliation with natural scrubs",
+                    "Cuticle care and nail shaping",
+                    "Massage with luxury creams",
+                    "Polish application of your choice"
+                ],
+                benefits: [
+                    "Beautiful, well-groomed nails",
+                    "Soft, hydrated hands and feet",
+                    "Relaxation and pampering",
+                    "Professional nail care techniques"
+                ]
+            },
+            makeup: {
+                title: "Professional Makeup",
+                image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
+                price: "From $60",
+                duration: "45-90 mins",
+                description: "Achieve a flawless look for any occasion with our professional makeup application. Our makeup artists use high-quality products and techniques to enhance your natural beauty and create the perfect look for your event.",
+                features: [
+                    "Skin preparation and priming",
+                    "Customized look creation",
+                    "High-quality professional products",
+                    "Long-lasting, smudge-proof finish",
+                    "Expert application techniques"
+                ],
+                benefits: [
+                    "Flawless, camera-ready makeup",
+                    "Enhanced natural features",
+                    "Long-lasting wear",
+                    "Professional product recommendations"
+                ]
+            }
+        };
+
+        // Open modal with service details
+        learnMoreButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const service = button.getAttribute('data-service');
+                const details = serviceDetails[service];
+                
+                if (details) {
+                    modalBody.innerHTML = `
+                        <div class="modal-image">
+                            <img src="${details.image}" alt="${details.title}">
+                        </div>
+                        <div class="modal-details">
+                            <h2>${details.title}</h2>
+                            <div class="service-price">${details.price}</div>
+                            <div class="service-duration">${details.duration}</div>
+                            <p>${details.description}</p>
+                            
+                            <h3>What's Included</h3>
+                            <div class="modal-features">
+                                ${details.features.map(feature => `
+                                    <div class="feature-item">
+                                        <i class="fas fa-check feature-icon"></i>
+                                        <span>${feature}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                            
+                            <h3>Benefits</h3>
+                            <div class="modal-features">
+                                ${details.benefits.map(benefit => `
+                                    <div class="feature-item">
+                                        <i class="fas fa-star feature-icon"></i>
+                                        <span>${benefit}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                            
+                            <div style="margin-top: 30px; text-align: center;">
+                                <button class="btn book-btn" style="padding: 12px 30px;">Book This Service</button>
+                            </div>
+                        </div>
+                    `;
+                    
+                    serviceModal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        // Close modal
+        modalClose.addEventListener('click', () => {
+            serviceModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal when clicking outside
+        serviceModal.addEventListener('click', (e) => {
+            if (e.target === serviceModal) {
+                serviceModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Close mobile navigation on window resize (if needed)
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMobileNav();
+            }
+        });
+    </script>
+</body>
+</html>
