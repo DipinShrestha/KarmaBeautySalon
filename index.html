@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karma Beauty Salon - Unisex Hair & Beauty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">KARMA</a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="team.html" class="nav-link">Specialists</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
+                
+            </ul>
+        </div>
+    </header>
+
+    <!-- NEW: Mobile Navigation Overlay and Menu -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+    <div class="mobile-nav-menu" id="mobile-nav-menu">
+        <div class="mobile-nav-header">
+            <button class="mobile-close-btn" id="mobile-close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul>
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="team.html" class="nav-link">Specialists</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
+            
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>KARMA</h1>
+            <p>Beauty Salon </p>
+            <div class="para"><p>Where style meets serenity in the heart of the city</p></div>
+            <a href="service.html" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Our Philosophy</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Beauty with Purpose</h3>
+                    <p>At Karma Beauty Salon, we believe that beauty is more than skin deep. Our approach combines expert technique with mindful practices to create an experience that nourishes both body and soul.</p>
+                    <p>Founded in 2010, we've cultivated a space where everyone feels welcome, valued, and beautiful. Our team of skilled professionals is dedicated to helping you look and feel your best.</p>
+                </div>
+                <div class="about-image">
+                    <img src="IMG_9417.jpg" alt="Salon interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="scroll-section">
+                <button class="scroll-btn scroll-btn-prev" id="services-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="scroll-container" id="services-container">
+                    <div class="scroll-item">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="IMG_9419.jpg" alt="Hair Styling">
+                            </div>
+                            <div class="service-info">
+                                <h3>HairCut</h3>
+                                <p>From precision cuts to creative coloring, our stylists create looks that enhance your natural beauty.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="IMG_9422.jpg" alt="Facial Treatments">
+                            </div>
+                            <div class="service-info">
+                                <h3>Make up</h3>
+                                <p>Rejuvenate your skin with our customized facials using premium, natural products.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="IMG_9425.jpg" alt="Spa Services">
+                            </div>
+                            <div class="service-info">
+                                <h3>Hair Colour</h3>
+                                <p>Relax and unwind with our therapeutic massages and body treatments.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="IMG_9420.jpg" alt="Nail Services">
+                            </div>
+                            <div class="service-info">
+                                <h3>Nail Services</h3>
+                                <p>Express your style with our professional manicures and pedicures using high-quality products.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="IMG_9424.jpg" alt="Bridal Packages">
+                            </div>
+                            <div class="service-info">
+                                <h3>3D Nails</h3>
+                                <p>Make your special day perfect with our comprehensive bridal beauty packages.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-btn scroll-btn-next" id="services-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="scroll-indicator">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>Swipe to explore more</span>
+                </div>
+            </div>
+        </div>
+        
+         </section>
+         <div class="expbtn">
+            <a href="service.html" class="btn">Explore Services</a>
+        </div>
+
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Work</h2>
+            <div class="scroll-section">
+                <button class="scroll-btn scroll-btn-prev" id="gallery-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="scroll-container" id="gallery-container">
+                    <div class="scroll-item">
+                        <div class="gallery-item">
+                            <img src="IMG_9427.PNG" alt="Hair Style 1">
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="gallery-item">
+                            <img src="IMG_9428.PNG" alt="Hair Style 2">
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="gallery-item">
+                            <img src="IMG_9430.PNG" alt="Beard Grooming">
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="gallery-item">
+                            <img src="IMG_9432" alt="Spa Treatment">
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="gallery-item">
+                            <img src="IMG_9433.PNG" alt="Nail Art">
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="gallery-item">
+                            <img src="IMG_9434.PNG" alt="Makeup">
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="gallery-item">
+                            <img src="IMG_9434.PNG" alt="Makeup">
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="gallery-item">
+                            <img src="IMG_9437.PNG" alt="Makeup">
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="gallery-item">
+                            <img src="IMG_9436.PNG" alt="Makeup">
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-btn scroll-btn-next" id="gallery-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="scroll-indicator">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>Swipe to explore more</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="expbtn">
+        <a href="gallery.html" class="btn">Explore more work</a>
+    </div>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Client Reviews</h2>
+            <div class="scroll-section">
+                <button class="scroll-btn scroll-btn-prev" id="reviews-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="scroll-container" id="reviews-container">
+                    <div class="scroll-item">
+                        <div class="review-card">
+                            <p class="review-text">Karma Salon transformed my look completely. The stylists really listened to what I wanted and delivered beyond my expectations.</p>
+                            <div class="reviewer">
+                                <div class="reviewer-image">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Sarah Johnson">
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>Bipin Shrestha</h4>
+                                    <p>Regular Client</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="review-card">
+                            <p class="review-text">The spa services here are exceptional. I leave feeling refreshed and renewed every time. Highly recommend their facial treatments.</p>
+                            <div class="reviewer">
+                                <div class="reviewer-image">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Michael Chen">
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>Pranish Magar</h4>
+                                    <p>First-time Visitor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="review-card">
+                            <p class="review-text">As a man who's particular about grooming, I appreciate the attention to detail at Karma. Best beard trim I've ever had.</p>
+                            <div class="reviewer">
+                                <div class="reviewer-image">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="David Rodriguez">
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>David Rai</h4>
+                                    <p>Regular Client</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="review-card">
+                            <p class="review-text">The bridal package was absolutely perfect. My entire bridal party looked stunning thanks to the talented team at Karma.</p>
+                            <div class="reviewer">
+                                <div class="reviewer-image">
+                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80" alt="Jessica Williams">
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>Jessica Gurung</h4>
+                                    <p>Bride</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="review-card">
+                            <p class="review-text">I've been coming to Karma for years and they never disappoint. The atmosphere is so relaxing and the staff is incredibly skilled.</p>
+                            <div class="reviewer">
+                                <div class="reviewer-image">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Amanda Thompson">
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>Amanda Thompson</h4>
+                                    <p>Loyal Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-btn scroll-btn-next" id="reviews-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="scroll-indicator">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>Swipe to explore more</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title">Our Specialists</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="plash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Emma Wilson">
+                    </div>
+                    <h3>Nirav Magar</h3>
+                    <p>Senior Stylist & Color Specialist</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="James Peterson">
+                    </div>
+                    <h3>James Rai</h3>
+                    <p>Master Barber & Grooming Expert</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="m/photo-1594744803329-e58b31de8bf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Sophia Lee">
+                    </div>
+                    <h3>Sophia Tamang</h3>
+                    <p>E Director</p>
+                </div>
+            </div>
+            <div class="team-cta">
+                <a href="team.html" class="btn">Explore Specialist</a>
+            </div>
+        </div>
+    </section>
+     <!-- Map Section -->
+ <section class="map-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Find Us</h2>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.857213027736!2d87.69477717578312!3d26.661807176797687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e58f34f58d7383%3A0xab77e81d11fc8314!2sKarma%20Beauty%20Salon!5e1!3m2!1sen!2snp!4v1759573254303!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>KARMA</h3>
+                    <p>Beauty Salon</p>
+                    <p>Where style meets serenity in the heart of the city</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><a href="https://maps.app.goo.gl/WV72YyYncDNsbAPC8"> <i class="fas fa-map-marker-alt"></i> Damak</a></p>
+                    <p><i class="fas fa-phone"></i> (+977) 9800000000</p>
+                    <p><i class="fas fa-envelope"></i> info@karmabeauty.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Sunday:9am - 8pm</p>
+                    <p>Monday: 9am - 8pm</p>
+                    <p>Tuesday: 10am - 8pm</p>
+                    <p>Wednesday:9am - 8pm</p>
+                    <p>Thursday:9am - 8pm</p>
+                    <p>Friday:9am - 8pm</p>
+                    <p>Saturday:9am - 8pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/karmabeautysalon123"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/karmabeautysalon2080?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@karmabeautysalon3?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Karma Beauty Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+        const mobileNavMenu = document.getElementById('mobile-nav-menu');
+        const mobileCloseBtn = document.getElementById('mobile-close-btn');
+
+        // Toggle mobile navigation
+        hamburger.addEventListener('click', () => {
+            mobileNavOverlay.classList.add('active');
+            mobileNavMenu.classList.add('active');
+            hamburger.innerHTML = '<i class="fas fa-times"></i>';
+        });
+
+        // Close mobile navigation
+        function closeMobileNav() {
+            mobileNavOverlay.classList.remove('active');
+            mobileNavMenu.classList.remove('active');
+            hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+
+        // Close when clicking the X button
+        mobileCloseBtn.addEventListener('click', closeMobileNav);
+
+        // Close when clicking outside the menu
+        mobileNavOverlay.addEventListener('click', closeMobileNav);
+
+        // Close when clicking on a link
+        document.querySelectorAll('.mobile-nav-menu .nav-link').forEach(link => {
+            link.addEventListener('click', closeMobileNav);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Close mobile navigation on window resize (if needed)
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMobileNav();
+            }
+        });
+
+        // Horizontal Scroll Functionality
+        function setupHorizontalScroll(containerId, prevBtnId, nextBtnId) {
+            const container = document.getElementById(containerId);
+            const prevBtn = document.getElementById(prevBtnId);
+            const nextBtn = document.getElementById(nextBtnId);
+            
+            // Calculate scroll amount based on container width
+            const scrollAmount = () => {
+                if (window.innerWidth < 768) {
+                    return container.clientWidth * 0.8; // Scroll 80% of container width on mobile
+                } else {
+                    return container.clientWidth * 0.6; // Scroll 60% of container width on desktop
+                }
+            };
+            
+            // Next button click
+            nextBtn.addEventListener('click', () => {
+                container.scrollBy({
+                    left: scrollAmount(),
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Previous button click
+            prevBtn.addEventListener('click', () => {
+                container.scrollBy({
+                    left: -scrollAmount(),
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Hide buttons when at the edges
+            const checkScrollPosition = () => {
+                const scrollLeft = container.scrollLeft;
+                const scrollWidth = container.scrollWidth;
+                const clientWidth = container.clientWidth;
+                
+                // Show/hide previous button
+                if (scrollLeft <= 10) {
+                    prevBtn.style.opacity = '0.3';
+                    prevBtn.style.cursor = 'not-allowed';
+                } else {
+                    prevBtn.style.opacity = '1';
+                    prevBtn.style.cursor = 'pointer';
+                }
+                
+                // Show/hide next button
+                if (scrollLeft + clientWidth >= scrollWidth - 10) {
+                    nextBtn.style.opacity = '0.3';
+                    nextBtn.style.cursor = 'not-allowed';
+                } else {
+                    nextBtn.style.opacity = '1';
+                    nextBtn.style.cursor = 'pointer';
+                }
+            };
+             // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+            // Check scroll position on load and scroll
+            container.addEventListener('scroll', checkScrollPosition);
+            window.addEventListener('resize', checkScrollPosition);
+            checkScrollPosition();
+        }
+
+        // Initialize horizontal scroll for each section
+        setupHorizontalScroll('services-container', 'services-prev', 'services-next');
+        setupHorizontalScroll('gallery-container', 'gallery-prev', 'gallery-next');
+        setupHorizontalScroll('reviews-container', 'reviews-prev', 'reviews-next');
+
+        // Hide scroll indicators after user interaction
+        function hideScrollIndicator(containerId) {
+            const container = document.getElementById(containerId);
+            const indicator = container.parentElement.querySelector('.scroll-indicator');
+            
+            container.addEventListener('scroll', () => {
+                if (indicator.style.opacity !== '0') {
+                    indicator.style.transition = 'opacity 0.5s ease';
+                    indicator.style.opacity = '0';
+                    
+                    // Remove indicator after fade out
+                    setTimeout(() => {
+                        indicator.style.display = 'none';
+                    }, 500);
+                }
+            });
+        }
+
+        // Initialize scroll indicators
+        hideScrollIndicator('services-container');
+        hideScrollIndicator('gallery-container');
+        hideScrollIndicator('reviews-container');
+    </script>
+</body>
+</html>
